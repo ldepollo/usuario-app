@@ -28,6 +28,15 @@ public class User {
     @Column
     private String password;
 
+    public User() {
+    }
+
+    public User(UUID id, String name, String password) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+    }
+
     public User(String name, String password) {
         this.name = name;
         this.password = password;
